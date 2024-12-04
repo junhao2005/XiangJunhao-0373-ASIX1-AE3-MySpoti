@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" href="../img/formu.png" type="image/x-icon">
+</head>
+<body>
+
+    <table border="0px" width="100%" bgcolor="#333">
+        <thead> <!--encabezado-->
+            <tr>           
+                <th width="30%"><a href="../index.html" style="color: white">Inicio</a></th>   
+                <th width="30%"><a href="../discografia/discografia.html" style="color: white">Discografia</a></th>
+                <th width="30%"><a href="../formulario/formulario.html" style="color: white">Registrarse</a></th>
+            </tr>
+        </thead>
+    </table>
+
+    <h1 align="center">Inscripción a una newsletter</h1>
+    <hr>
+
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre">
+
+        <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Introduce tu apellido">
+
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad" placeholder="Introduce tu edad">
+
+        <br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="text" id="email" name="email" placeholder="Introduce tu correo">
+
+        <br><br>
+
+        <label for="pais">País:</label><br>
+        <select name="pais" id="pais">
+            <option value="" selected disabled>--Selecciona tu pais--</option>
+            <option value="españa">España</option>
+            <option value="china">China</option>
+            <option value="italia">Italia</option>
+            <option value="francia">Francia</option>
+        </select>
+
+        <br><br>
+
+
+
+
+    
+    <footer>
+        <table width="100%" border="0" cellpadding="10" bgcolor="#333">
+            <tr>
+                <td align="center" colspan="3" style="color: white;">
+                    MySpoti @Junhao Xiang
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="33%">
+                    <a href="../index.html" style="color: white">Volver a inicio</a>
+                </td>
+                <td align="center" width="33%">
+                    <a href="../discografia/discografia.html" style="color: white">Discografia</a>
+                </td>
+                <td align="center" width="33%">
+                    <a href="../formulario/formulario.html" style="color: white">Registrarse</a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    
+</body>
+</html>
