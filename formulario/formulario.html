@@ -6,7 +6,7 @@
     <title>Formulario</title>
     <link rel="icon" href="../img/formu.png" type="image/x-icon">
 </head>
-<body>
+<body bgcolor="lightgray">
 
     <table border="0px" width="100%" bgcolor="#333">
         <thead> <!--encabezado-->
@@ -21,47 +21,50 @@
     <h1 align="center">Inscripción a una newsletter</h1>
     <hr>
 
-    <form action="procesar.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre">
+    <table border="0" width="100%">
+        <tr>
+            <td width="10%"></td>
+            <!-- Columna izquierda: Formulario -->
+            <td width="50%">
+                <form action="procesar.php" method="post">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre"><br><br>
 
-        <br><br>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Introduce tu apellido"><br><br>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Introduce tu apellido">
+                    <label for="edad">Edad:</label><br>
+                    <input type="text" id="edad" name="edad" placeholder="Introduce tu edad"><br><br>
 
-        <br><br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Introduce tu correo"><br><br>
 
-        <label for="edad">Edad:</label>
-        <input type="text" id="edad" name="edad" placeholder="Introduce tu edad">
+                    <label for="pais">País:</label><br>
+                    <select name="pais" id="pais">
+                        <option value="" selected disabled>--Selecciona tu país--</option>
+                        <option value="españa">España</option>
+                        <option value="china">China</option>
+                        <option value="italia">Italia</option>
+                        <option value="francia">Francia</option>
+                    </select><br><br>
 
-        <br><br>
+                    <label for="intereses">Intereses:</label><br>
+                    <textarea name="intereses" id="intereses" cols="50" rows="4" placeholder="Introduce tus intereses"></textarea><br><br>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="text" id="email" name="email" placeholder="Introduce tu correo">
+                    <button type="submit">Enviar datos</button>
+                </form>
+            </td>
 
-        <br><br>
+            <!-- Columna derecha: Imagen -->
+            <td width="40%" align="center">
+                <img src="../img/quien.png" alt="Mike" width="80%">
+            </td>
+            <td width="20%"></td>
+        </tr>
+    </table>
 
-        <label for="pais">País:</label><br>
-        <select name="pais" id="pais">
-            <option value="" selected disabled>--Selecciona tu pais--</option>
-            <option value="españa">España</option>
-            <option value="china">China</option>
-            <option value="italia">Italia</option>
-            <option value="francia">Francia</option>
-        </select>
+   
 
-        <br><br>
-
-        <label for="intereses">Intereses:</label><br> <!--cols es horizontal rows es vertical-->
-        <textarea name="intereses" id="intereses" cols="80" rows="4" placeholder="Intoduce tus intereses"></textarea>
-
-        <br><br>
-
-        <button type="submit">Enviar datos </button>
-    </form>
-    <br>
-    
     <footer>
         <table width="100%" border="0" cellpadding="10" bgcolor="#333">
             <tr>
